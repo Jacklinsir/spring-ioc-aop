@@ -1,0 +1,12 @@
+<beans>
+    <bean id="wheel" class="com.jacklin.spring.ioc.bean.Wheel">
+        <property name="brand" value="Michelin" />
+        <property name="specification" value="265/60 R18" />
+    </bean>
+
+    <bean id="car" class="com.jacklin.spring.ioc.bean.Car">
+        <property name="name" value="Mercedes Benz G 500"/>
+        <property name="price" value="5822588"/>
+        <property name="wheel" ref="wheel"/>
+    </bean>
+</beans>
